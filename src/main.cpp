@@ -127,7 +127,7 @@ int main(int argc, char* argv[]) {
   // Create a Fusion EKF instance
   FusionEKF fusionEKF;
 
-  // used to compute the RMSE later
+  // used to compute the RMSE laterfi
   vector<VectorXd> estimations;
   vector<VectorXd> ground_truth;
 
@@ -170,6 +170,8 @@ int main(int argc, char* argv[]) {
   // compute the accuracy (RMSE)
   Tools tools;
   cout << "Accuracy - RMSE:" << endl << tools.CalculateRMSE(estimations, ground_truth) << endl;
+  //cout << "RMSE" << endl << tools.CalculateRMSE(estimations, ground_truth) << endl;
+   
 
   // close files
   if (out_file_.is_open()) {

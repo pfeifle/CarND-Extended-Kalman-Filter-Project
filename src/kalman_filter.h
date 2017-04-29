@@ -21,7 +21,10 @@ public:
   Eigen::MatrixXd H_;
 
   // measurement covariance matrix
-  Eigen::MatrixXd R_;
+  Eigen::MatrixXd R_laser_;
+
+  // measurement covariance matrix
+  Eigen::MatrixXd R_radar_;
 
   /**
    * Constructor
